@@ -4,10 +4,11 @@ import cube
 class Solver:
     def __init__(self, incomingCube):
         global cube
-        cube = incomingCube
+        self.cube = incomingCube
 
-    def myLogic():
+    def myLogic(self):
         #rotate cube example
-        cube.rotateDown(1)
-        cube.rotateRight(3)
+        print('logic:')
+        self.cube.rotateDown(1)
+        self.cube.rotateRight(3)
         return cube

@@ -1,5 +1,4 @@
 #Cube Class
-
 class Cube:
     def __init__(self, startingSet):
         print('init: cube created')
