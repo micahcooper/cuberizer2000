@@ -5,7 +5,7 @@ class Cube:
         global newState
         self.newState = startingSet
 
-        print("init: cube start state is ",self.newState)
+        print("init: state ",self.newState)
     
     @property
     def checknewState(self):
@@ -63,6 +63,8 @@ class Cube:
             newState[17] = originalState[13]
             newState[18] = originalState[16]
 
+        self.newState = newState
+
     def rotateRight(self, position):
         print("rotate: left ", position)
         originalState = self.newState
@@ -112,4 +114,4 @@ class Cube:
                 newState[17] = originalState[13]
                 newState[18] = originalState[16]
 
-
+        self.newState = newState
