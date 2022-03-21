@@ -1,11 +1,12 @@
 #Cube Class
 
 class Cube:
+    global cubeState
+
     def __init__(self,startingSet):
         print('init: cube created')
-        global cubeState
         cubeState = startingSet
-        print("init: cube state is ",cubeState)
+        print("init: cube start state is ",cubeState)
 
     def rotateDown(self, direction, position):
         print("rotate: down ", position)
