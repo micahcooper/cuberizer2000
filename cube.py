@@ -65,7 +65,9 @@ class Cube:
 
     def rotateRight(self, position):
         print("rotate: left ", position)
-        originalState = newState
+        originalState = self.newState
+        newState = self.newState
+
 
         if(position == 1):
                 newState[1] = originalState[37]
