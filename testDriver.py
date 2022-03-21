@@ -4,7 +4,7 @@ import solver
 #print(dir(cube))
 
 ######test case 1######
-testcase1 = ["a"]
+testcase1 = list(("r", "g", "w"))
 cube1 = cube.Cube(testcase1)
 #solver.Solver(cube1)
 

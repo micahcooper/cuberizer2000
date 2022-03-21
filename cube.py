@@ -12,7 +12,7 @@ class Cube:
         temporarySet = self.cubeState
 
         if(position == 1):
-            cubeState[1] = temporyarSet[37]
+            cubeState[1] = temporarySet[37]
             cubeState[4] = temporarySet[40]
             cubeState[7] = temporarySet[43]
             cubeState[46] = temporarySet[1]
