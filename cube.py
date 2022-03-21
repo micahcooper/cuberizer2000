@@ -1,18 +1,19 @@
 #Cube Class
 
 class Cube:
-    
-
     def __init__(self, startingSet):
         print('init: cube created')
         global cubeState
         self.cubeState = startingSet
+
         print("init: cube start state is ",self.cubeState)
     
     @property
     def checkCubeState(self):
         return self.cubeState
 
+    def checkColorAT(self,index):
+        return self.cubeState[index]
 
     def rotateDown(self, position):
         print("rotate: down ", position)
