@@ -1,36 +1,38 @@
 #script for test cases
 import cube
 import solver
-print(dir(cube))
+#print(dir(cube))
 
 ######test case 1######
-testcaseSet1 = {'rbgwy'}
-cube1 = cube.Cube(testcaseSet1)
-solver.Solver(cube1)
+testcase1 = ["a"]
+cube1 = cube.Cube(testcase1)
+#solver.Solver(cube1)
 
 print( 'test case 1')
-print( cube1.currentSet() )
+print( cube1.currentState )
 
+"""
 #####test case 2#######
-testcaseSet2 = {'bbrrrwwwgg'}
-cube2 = cube.Cube(testcaseSet2)
+testcase2 = ["bbrrrwwwgg"]
+cube2 = cube.Cube(testcase2)
 solver.Solver(cube2)
 
 print( 'test case 2')
-print( cube2.currentSet() )
+print( cube2.currentState )
 
 #####test case 3#######
-testcaseSet3 = {'wwwww'}
-cube3 = cube.Cube(testcaseSet2)
+testcase3 = {'wwwww'}
+cube3 = cube.Cube(testcase3)
 solver.Solver(cube3)
 
 print( 'test case 3' )
-print( cube3.currentSet() )
+print( cube3.currentState )
 
 #####test case 4#######
-testcaseSet4 = {'brg'}
-cube4 = cube.Cube(testcaseSet2)
+testcase4 = {'brg'}
+cube4 = cube.Cube(testcase4)
 solver.Solver(cube4)
 
 print('test case 4')
-print( cube4.currentSet() )
+print( cube4.currentState )
+"""
