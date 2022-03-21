@@ -12,6 +12,6 @@ cube1 = cube.Cube(testcase1)
 #solver.Solver(cube1)
 
 
-print( 'last: state ', cube1.currentState )
-print('=================')
+print( 'last: state ', cube1.checkCubeState )
+print('==================')
 print('')

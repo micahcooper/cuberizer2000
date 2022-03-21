@@ -1,14 +1,20 @@
 #Cube Class
 
 class Cube:
-    global cubeState
+    
 
-    def __init__(self,startingSet):
+    def __init__(self, startingSet):
         print('init: cube created')
-        cubeState = startingSet
-        print("init: cube start state is ",cubeState)
+        global cubeState
+        self.cubeState = startingSet
+        print("init: cube start state is ",self.cubeState)
+    
+    @property
+    def checkCubeState(self):
+        return self.cubeState
 
-    def rotateDown(self, direction, position):
+
+    def rotateDown(self, position):
         print("rotate: down ", position)
         temporaryState = self.cubeState
 
@@ -56,7 +62,7 @@ class Cube:
             cubeState[17] = temporaryState[13]
             cubeState[18] = temporaryState[16]
 
-    def rotateRight(position):
+    def rotateRight(self, position):
         print("rotate: left ", position)
         temporaryState = cubeState
 
@@ -103,6 +109,4 @@ class Cube:
                 cubeState[17] = temporaryState[13]
                 cubeState[18] = temporaryState[16]
 
-    def currentState():
-        print(cubeState)
 
