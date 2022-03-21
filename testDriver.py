@@ -9,7 +9,9 @@ print('=====TEST ONE=====')
 ######test case 1######
 testcase1 = list(("r", "g", "w"))
 cube1 = cube.Cube(testcase1)
-print('run: check position 1 ',cube1.checkColorAT(1))
+for x in range(3):
+    print('run: check position ', x, cube1.checkColorAT(x))
+    
 solver.Solver(cube1)
 
 
